@@ -4,11 +4,17 @@ html {
 
 body {
   font-family: Helvetica, sans-serif;
-  line-height: 2.75rem;
+  line-height: 2rem;
 }
 
 h1 {
   font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -110,4 +116,23 @@ nav ul {
   color: white;
   padding: .5rem 0;
   text-align: center;
+}
+
+/* Info */
+
+.businessInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
 }
