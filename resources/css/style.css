@@ -16,17 +16,18 @@ h1 {
 /* Header */
 
 .header {
-  display: flex;
-  justify-content: center;
   background-color: black;
   color: white;
 }
 
 .siteContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header .siteContainer {
   display: flex;
   align-items: center;
-  max-width: 960px;
-  width: 100%;
   padding: 0.66rem 0 0.66rem 0.5rem;
 }
 
@@ -42,8 +43,6 @@ h1 {
 /* Hero */
 
 .hero {
-  display: flex;
-  justify-content: center;
   background-image: url('../images/moto.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -55,11 +54,27 @@ h1 {
   background-color: black;
   color: white;
   width: 20rem;
-  padding: 2rem 3rem
+  padding: 2rem 3rem;
+  position: absolute;
+  margin-top: 9rem;
 }
 
 .message p {
   font-size: 1rem;
   font-weight: bold;
   padding-bottom: .25rem;
+}
+
+/* Navigation */
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
