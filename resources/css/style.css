@@ -3,8 +3,15 @@ html {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  line-height: 2.75rem;
 }
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 
 /* Header */
 
@@ -33,3 +40,26 @@ body {
 }
 
 /* Hero */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/moto.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.message {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem
+}
+
+.message p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: .25rem;
+}
