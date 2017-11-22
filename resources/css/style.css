@@ -3,5 +3,33 @@ html {
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
 }
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.siteContainer {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.siteContainer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.siteContainer span {
+  font-size: 1rem;
+}
+
+/* Hero */
