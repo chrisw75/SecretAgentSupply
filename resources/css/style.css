@@ -2,6 +2,7 @@ html {
   font-size: 18px;
 }
 
+
 body {
   font-family: Helvetica, sans-serif;
   line-height: 2rem;
@@ -83,6 +84,20 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
 }
 
 /* Content */
