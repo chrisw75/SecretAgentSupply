@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: Helvetica, sans-serif;
-  line-height: 2rem;
+  line-height: 2.4rem;
 }
 
 h1 {
@@ -116,8 +116,7 @@ nav ul {
   max-width: 8rem;
 }
 
-.product span,
-.mobile-product span {
+.product span {
   display: block;
   background-color: black;
   color: white;
@@ -151,7 +150,7 @@ nav ul {
 
 /* Footer */
 
-.footer {
+footer {
   color: white;
   background-color: black;
   padding: 5rem 0;
@@ -163,22 +162,67 @@ nav ul {
 @media only screen and (max-width: 1024px) {
   nav ul {
       display: none;
-    }
+  }
 
   .mobile-nav {
     display: block;
   }
 
-  .product {
+  .product.glasses {
     display: none;
   }
 
-  .mobile-product {
-    display: block;
+  .product {
+    width: 47%;
   }
-
 }
 
 @media only screen and (max-width: 470px) {
-  
+  .hero {
+    height: 15rem;
+  }
+
+  .message{
+    padding: 1rem 2rem;
+    margin-top: 8rem;
+  }
+
+  body {
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 0.77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .businessInfo {
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
 }
