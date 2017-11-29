@@ -88,16 +88,7 @@ nav ul {
 
 .mobile-nav {
   display: none;
-}
-
-@media only screen and (max-width: 1024px) {
-  .mobile-nav {
-    display: block;
-    text-align: center;
-  }
-  nav ul {
-    display: none;
-  }
+  text-align: center;
 }
 
 /* Content */
@@ -125,12 +116,18 @@ nav ul {
   max-width: 8rem;
 }
 
-.product span {
+.product span,
+.mobile-product span {
   display: block;
   background-color: black;
   color: white;
   padding: .5rem 0;
   text-align: center;
+}
+
+.mobile-product {
+ display: none;
+ width: 45%;
 }
 
 /* Info */
@@ -159,4 +156,25 @@ nav ul {
   background-color: black;
   padding: 5rem 0;
   margin-top: 4rem;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+      display: none;
+    }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .product {
+    display: none;
+  }
+
+  .mobile-product {
+    display: block;
+  }
+
 }
